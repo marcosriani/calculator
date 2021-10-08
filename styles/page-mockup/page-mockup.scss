@@ -1,0 +1,32 @@
+.header,
+.footer {
+  font-family: 'Audiowide', cursive;
+}
+
+.header {
+    height: 10vh;
+    background-color: $coral-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        color: $white-color;
+      }
+  }
+  
+  
+  .footer {
+    height: 5vh;
+    background-color: $coral-color;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item {
+        margin: 0 0.5rem;
+        color: $white-color;
+      }
+  }
+ 

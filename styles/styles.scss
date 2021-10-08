@@ -1,0 +1,29 @@
+$coral-color : coral;
+$grey-color: #E6E9EB;
+$blue-color: #66BEB2;
+$white-color: rgb(255, 255, 255);
+$darker-grey-color: #adaeb0;
+$black-color: #2d2d2d;
+$red-color: rgb(245, 76, 14);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    background-color: $grey-color;
+}
+
+
+
+
+@import "./page-mockup/page-mockup.scss";
+@import './calculator-mockup/calculator-mockup.scss';
+
