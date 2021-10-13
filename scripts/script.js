@@ -15,7 +15,13 @@ const calculatorKeys = () => {
         historyPanel.innerHTML = 'Hello there!';
         document.querySelector('.container__result--item').innerHTML = 0.0;
       } else if (event.target.id === 'positive-negative') {
-        clickedButtons.push('positive-negative');
+        if (parseFloat(makingNumber) > 0) {
+          makingNumber = -Math.abs(parseFloat(makingNumber));
+        } else {
+          makingNumber = Math.abs(parseFloat(makingNumber));
+        }
+
+        lastCalculator = '';
       } else if (event.target.id === 'percentage') {
         clickedButtons = [parseFloat(makingNumber) / 100];
         makingNumber = clickedButtons[0];
