@@ -1,4 +1,4 @@
-const calculatorKeys = () => {
+(function calculatorKeys() {
   let makingNumber = '';
   let lastCalculator = '';
   let clickedButtons = [0];
@@ -169,6 +169,4 @@ const calculatorKeys = () => {
   });
 
   return clickedButtons;
-};
-
-calculatorKeys();
+})();
