@@ -26,7 +26,23 @@
 
     &__item {
         margin: 0 0.5rem;
-        color: $white-color;
+        text-decoration: none;
       }
+    &__item a {
+        color: $white-color;
+        text-decoration: none;
+    }
+    &__item a:visited {
+        color: $white-color;
+        text-decoration: none;
+    }
+    &__item a:link {
+        color: $white-color;
+        text-decoration: none;
+    }
+    &__item a:active {
+        color: $white-color;
+        text-decoration: none;
+    }
   }
  

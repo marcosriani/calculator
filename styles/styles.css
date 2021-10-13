@@ -39,7 +39,23 @@ body {
 }
 .footer__item {
   margin: 0 0.5rem;
+  text-decoration: none;
+}
+.footer__item a {
   color: white;
+  text-decoration: none;
+}
+.footer__item a:visited {
+  color: white;
+  text-decoration: none;
+}
+.footer__item a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer__item a:active {
+  color: white;
+  text-decoration: none;
 }
 
 .container {
