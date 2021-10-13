@@ -17,31 +17,10 @@ const calculatorKeys = () => {
       } else if (event.target.id === 'positive-negative') {
         clickedButtons.push('positive-negative');
       } else if (event.target.id === 'percentage') {
-        if (lastCalculator === '/') {
-          // if you need to divide before pressing the result button
+        clickedButtons = [parseFloat(makingNumber) / 100];
+        makingNumber = clickedButtons[0];
 
-          clickedButtons = [parseFloat(makingNumber) / 100];
-        } else if (lastCalculator === '*') {
-          // if the last calculation was a multiplication and you need to divide a number to it
-          console.log('here as well');
-          clickedButtons = [clickedButtons[0] * parseFloat(makingNumber)];
-        } else if (lastCalculator === '+') {
-          // if the last calculation was a addition and you need to multiply a number to it
-          clickedButtons = [clickedButtons[0] + parseFloat(makingNumber)];
-        } else if (lastCalculator === '-') {
-          // if the last calculation was a subtraction and you need to multiply to it
-          clickedButtons = [clickedButtons[0] - parseFloat(makingNumber)];
-        } else {
-          if (lastCalculator === '') {
-            clickedButtons[0] = parseFloat(makingNumber);
-          }
-          clickedButtons = [parseFloat(makingNumber) / 100];
-          makingNumber = clickedButtons[0];
-          console.log(clickedButtons);
-          console.log(makingNumber);
-        }
-        makingNumber = '';
-        lastCalculator = '%';
+        lastCalculator = '';
       } else if (event.target.id === 'button0') {
         makingNumber += '0';
       } else if (event.target.id === 'button1') {
@@ -79,11 +58,9 @@ const calculatorKeys = () => {
       } else if (event.target.id === 'division') {
         if (lastCalculator === '/') {
           // if you need to divide before pressing the result button
-
           clickedButtons = [clickedButtons[0] / parseFloat(makingNumber)];
         } else if (lastCalculator === '*') {
           // if the last calculation was a multiplication and you need to divide a number to it
-          console.log('here as well');
           clickedButtons = [clickedButtons[0] * parseFloat(makingNumber)];
         } else if (lastCalculator === '+') {
           // if the last calculation was a addition and you need to multiply a number to it
@@ -185,11 +162,7 @@ const calculatorKeys = () => {
     });
   });
 
-  //   console.log(clickedButtons);
-
   return clickedButtons;
-
-  //   console.log(clickedButtons);
 };
 
 calculatorKeys();
