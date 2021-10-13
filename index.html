@@ -27,35 +27,40 @@
       <div class="container__calculator">
         <div class="container__history">
           <!-- history -->
-          <p class="container__history--items">30+0.3+400-200</p>
+          <p class="container__history--items">Hello there!</p>
         </div>
         <div class="container__result">
           <!-- result -->
-          <p class="container__result--item">50.0004</p>
+          <p class="container__result--item">0</p>
         </div>
 
         <div class="container__keyboard">
           <div>
             <div class="container__functions-one">
               <!-- functions one -->
-              <button class="container__button">AC</button>
-              <button class="container__button">&#43;/&#8722;</button>
-              <button class="container__button">&#37;</button>
+              <button id="AC" class="container__button">AC</button>
+              <button id="positive-negative" class="container__button">
+                &#43;/&#8722;
+              </button>
+              <button id="percentage" class="container__button">&#37;</button>
             </div>
             <div class="container__keyboard-number">
               <!-- keyboard -->
               <div class="container__keyboard-set">
                 <button
+                  id="button7"
                   class="container__button container__keyboard-set--bottom"
                 >
                   7
                 </button>
                 <button
+                  id="button8"
                   class="container__button container__keyboard-set--bottom"
                 >
                   8
                 </button>
                 <button
+                  id="button9"
                   class="container__button container__keyboard-set--bottom"
                 >
                   9
@@ -63,16 +68,19 @@
               </div>
               <div class="container__keyboard-set">
                 <button
+                  id="button4"
                   class="container__button container__keyboard-set--bottom"
                 >
                   4
                 </button>
                 <button
+                  id="button5"
                   class="container__button container__keyboard-set--bottom"
                 >
                   5
                 </button>
                 <button
+                  id="button6"
                   class="container__button container__keyboard-set--bottom"
                 >
                   6
@@ -80,16 +88,19 @@
               </div>
               <div class="container__keyboard-set">
                 <button
+                  id="button1"
                   class="container__button container__keyboard-set--bottom"
                 >
                   1
                 </button>
                 <button
+                  id="button2"
                   class="container__button container__keyboard-set--bottom"
                 >
                   2
                 </button>
                 <button
+                  id="button3"
                   class="container__button container__keyboard-set--bottom"
                 >
                   3
@@ -97,38 +108,58 @@
               </div>
               <div class="container__keyboard-set">
                 <button
+                  id="button0"
                   class="container__button container__keyboard-set--bottom"
                 >
                   0
                 </button>
                 <button
+                  id="dot"
                   class="container__button container__keyboard-set--bottom"
                 >
-                  ,
+                  &#8226;
                 </button>
                 <button
+                  id="delete"
                   class="container__button container__keyboard-set--bottom"
                 >
-                  <span class="container__button--back">&#9249;</span>
+                  <span id="delete-span" class="container__button--back"
+                    >&#9249;</span
+                  >
                 </button>
               </div>
             </div>
           </div>
           <div class="container__functions-two">
             <!-- functions two -->
-            <button class="container__button container__functions-two--set-one">
+            <button
+              id="division"
+              class="container__button container__functions-two--set-one"
+            >
               &#247;
             </button>
-            <button class="container__button container__functions-two--set">
+            <button
+              id="multiplication"
+              class="container__button container__functions-two--set"
+            >
               &#215;
             </button>
-            <button class="container__button container__functions-two--set">
+            <button
+              id="minus"
+              class="container__button container__functions-two--set"
+            >
               &#8722;
             </button>
-            <button class="container__button container__functions-two--set">
+            <button
+              id="plus"
+              class="container__button container__functions-two--set"
+            >
               &#43;
             </button>
-            <button class="container__button container__button--result">
+            <button
+              id="equal"
+              class="container__button container__button--result"
+            >
               &#61;
             </button>
           </div>
@@ -141,4 +172,6 @@
       <p class="footer__item">Terms of Use</p>
     </footer>
   </body>
+
+  <script type="text/javascript" src="./scripts/script.js"></script>
 </html>

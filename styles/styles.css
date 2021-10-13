@@ -54,13 +54,17 @@ body {
   box-shadow: 2px 1px 11px 0px rgba(0, 0, 0, 0.83);
   width: 18rem;
   height: 35rem;
-  border-radius: 25px;
+  border-radius: 35px;
+  overflow: scroll;
 }
 .container__history--items {
   color: white;
   font-size: 2em;
   font-weight: 200;
   margin: 0.5em;
+  overflow: scroll;
+  padding-top: 10px;
+  overflow: scroll;
 }
 .container__history {
   background: linear-gradient(188deg, #22c1c3 0%, #e67c59 100%);
@@ -69,6 +73,8 @@ body {
   display: grid;
   justify-content: flex-end;
   align-items: flex-end;
+  overflow: scroll;
+  padding-top: 10px;
 }
 .container__result {
   height: 15%;
@@ -130,7 +136,6 @@ body {
   vertical-align: middle;
 }
 .container__keyboard-number {
-  height: 80%;
   background-color: white;
 }
 .container__keyboard-set {
