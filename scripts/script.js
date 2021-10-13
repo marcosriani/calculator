@@ -20,12 +20,10 @@
         } else {
           makingNumber = Math.abs(parseFloat(makingNumber));
         }
-
         lastCalculator = '';
       } else if (event.target.id === 'percentage') {
         clickedButtons = [parseFloat(makingNumber) / 100];
         makingNumber = clickedButtons[0];
-
         lastCalculator = '';
       } else if (event.target.id === 'button0') {
         makingNumber += '0';
@@ -98,7 +96,6 @@
           }
           clickedButtons = [clickedButtons[0] * parseFloat(makingNumber)];
         }
-
         makingNumber = '';
         lastCalculator = '*';
       } else if (event.target.id === 'minus') {
@@ -131,7 +128,6 @@
         } else {
           clickedButtons = [parseFloat(makingNumber)];
         }
-
         makingNumber = '';
         lastCalculator = '+';
       } else if (event.target.id === 'equal') {
